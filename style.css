@@ -4,3 +4,28 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+#app {
+  grid-template-areas: 
+  "A A A"
+  "B B C"
+  "B B C"
+  "D D D";
+
+height: 100vh;
+}
+
+#app > * {  
+  border:  1px solid red;
+}
+
+/* Configuração da imagem */
+.avatar {
+  width: 4.2rem;
+  height: 4.2rem;
+
+ /* Cobre todo espaço sem modificar a estrutura da imagem */
+  object-fit: cover;
+
+  border-radius: 50%;
+}
