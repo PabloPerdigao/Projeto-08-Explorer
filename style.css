@@ -94,8 +94,6 @@ nav {
 main {
   margin-top: 3.1rem;
   width: 49.9rem;
-   /* Overflow : Deixa o header/footer fixos, 
-  enquanto a main habilita o scroll*/
   overflow-y:scroll;
 }
 
