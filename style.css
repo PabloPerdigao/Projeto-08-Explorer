@@ -46,6 +46,15 @@ header {
   background: var(--color-base-green-700);
 }    
 
+nav {
+  height: 4.0rem;
+  width: 4.0rem;
+  background-color: #F4FCFF;
+  border-radius: 50%;
+  padding: .8rem;
+}
+
+
 
 .input-wrapper label {
   width: 1px;
@@ -70,12 +79,12 @@ header {
   font-weight: 600;
 }
 
-/* Configuração do conteúdo */
+/* Configuração do conteúdo 
 #app {
   display: grid;
   grid-template-rows: max-content 1fr max-content;
   height: 100vh; 
-}
+}*/
 
 /* Configuração da foto de perfil*/
 .avatar {
