@@ -83,14 +83,7 @@ nav {
   font-weight: 600;
 }
 
-/*Configuração do conteúdo 
-#app {
-  display: grid;
-  grid-template-rows: max-content 1fr max-content;
-  height: 100vh; 
-}
-*/
-/* Configuração da foto de perfil*/
+/* Configuração da foto de perfil do usuário */
 .avatar {
   height: 4.2rem;
   width: 4.2rem;
@@ -99,12 +92,31 @@ nav {
   
 }
 
+main h1 {
+  color: var(--color-base-grey-800);
+  font-weight: 700;
+
+  font-size: 24px;
+
+  margin-top: 3.1rem;
+  padding: 0px  0px 6.6rem 2.6rem;
+
+}
+
+.container {
+
+}
+/*Configuração do conteúdo 
+#app {
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+  height: 100vh; 
+}
+*/
+
 /*.container {
   padding: 2.2rem 2.4rem;
 }
-
-
-
 
 #app{
   grid-template-areas: 
