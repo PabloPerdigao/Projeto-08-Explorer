@@ -3,29 +3,80 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
+/* Configuração das cores-base do layout */
+:root {
+  font-size: 62.5%;
+  --hue: 240;
+  --hue-green: 195;
+  --color-base-white: hsl(0, 0%, 100%);
+  --color-base-fake-white:hsl(196, 100%, 98%);
+  --color-base-grey-800: hsl(var(--hue), 6%, 13%);
+  --color-base-grey-900: hsl(var(--hue), 5%, 7%);
+  --color-base-green-700: hsl(var(--hue-green), 91%, 25%);
+  --color-base-green-500: hsl(var(--hue-green), 46%, 40%);
+}
+
+/* Configuração da fonte da página */
+html,body,input {
+  font-family: 'Mulish', sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  background: var(--color-base-fake-white);
+  color: var(--color-base-grey-900);
+}
+
+/* Configuração do conteúdo */
 #app {
-  grid-template-areas: 
-  "A A A"
-  "B B C"
-  "B B C"
-  "D D D";
-
-height: 100vh;
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+  height: 100vh; 
 }
 
-#app > * {  
-  border:  1px solid red;
-}
-
-/* Configuração da imagem */
+/* Configuração da foto de perfil*/
 .avatar {
-  width: 4.2rem;
   height: 4.2rem;
-
- /* Cobre todo espaço sem modificar a estrutura da imagem */
+  width: 4.2rem;
   object-fit: cover;
-
   border-radius: 50%;
 }
+
+
+
+
+#app{
+  grid-template-areas: 
+   "A A A"
+   "B B C"
+   "D D D";
+ 
+  border: 2px  solid tomato;
+}
+
+#app > * {
+  border: 1px solid green;
+}
+
+
+#app header {
+  grid-area: A ;
+}
+
+#app main {
+  grid-area: B ;
+}
+
+#app sidebar {
+  grid-area: C ;
+}
+
+#app footer {
+  grid-area: D ;
+}
+
+
