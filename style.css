@@ -107,11 +107,14 @@ h1 {
 
 button {
   margin-left: 2.2rem;
+  border: none;
+  height: 4.2rem;
+  width: 4.2rem;
+  object-fit: cover;
+  border-radius: 50%; 
 }
 
-.container {
 
-}
 /*Configuração do conteúdo 
 #app {
   display: grid;
