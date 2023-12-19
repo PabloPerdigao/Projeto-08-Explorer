@@ -32,7 +32,7 @@ body {
   font-size: 1.6rem;
   background: var(--color-base-fake-white);
   color: var(--color-base-grey-900);
-
+  
   width: 43rem;
   height: 194.5rem;
 }
@@ -48,6 +48,7 @@ header {
   
   flex-shrink: 0;
   background: var(--color-base-green-700);
+
 }    
 
 /* Configuração da logomarca */
@@ -73,9 +74,9 @@ nav {
   align-items: center;
   gap: 1.2rem;
   flex: 1 0 0;
-  border: none;
   border-radius: .4rem;
   background-color: var(--color-base-green-500);
+  border: none;  
 }
 
 .input-wrapper input::placeholder {
@@ -91,7 +92,7 @@ nav {
   border-radius: 50%; 
 }
 
-main {
+.container {
   margin-top: 3.1rem;
   width: 49.9rem;
   overflow-y:scroll;
@@ -100,20 +101,35 @@ main {
 h1 {
   color: var(--color-base-grey-800);
   font-weight: 700;
-
+  
   font-size: 24px;
-  padding: .8rem 2.6rem;
+
+  margin-left: 2.6rem;
+  margin-bottom: .8rem;
 }
 
 button {
-  margin-left: 2.2rem;
   border: none;
   height: 4.2rem;
   width: 4.2rem;
   object-fit: cover;
   border-radius: 50%; 
+  
+
 }
 
+main {
+  height: 754px;
+  width: 382px;
+  margin-top: 4.3rem;
+}
+
+p {
+ font-size: 16px;
+ font-weight: 400;
+ line-height: 160%;
+ margin-left: 2.6rem;
+}
 
 /*Configuração do conteúdo 
 #app {
