@@ -99,7 +99,7 @@ nav {
 .container {
   margin-top: 3.1rem;
   width: 49.9rem;
-  overflow-y:scroll;
+  
 }
 
 /* Question Config */
@@ -189,7 +189,27 @@ main p {
   width: 21.5rem;
 }
 
+/* Configuração do rodapé */
+footer {
+  display: flex;
+  width: 43.0rem;
+  height: 6.4rem;
+  padding: 1.6rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.0rem;
+  flex-shrink: 0;
+  background: #387E96;
+}
 
+footer p {
+  color: #FFF;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: normal;
+}
 
 /*Configuração do conteúdo 
 #app {
