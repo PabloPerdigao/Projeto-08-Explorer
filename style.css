@@ -139,34 +139,41 @@ main p {
 }
 
 /* Configuração dos "artigos relacionados" */
-sidebar {
-  display: grid;
-
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 32px;
-  height: 100vh;
-  
+.gallery-1, .gallery-2, .gallery-3, .gallery-4, .gallery-5 {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-bottom: 3.2rem;
+  margin-left: 2.6rem;
 }
 
 /* imagem */
-figure {
-  width: 151px;
-  height: 84px;
-  border-radius: 5px;
+.item {
+  width: 15.1rem;
+  height: 8.4rem;
+  border-radius: .5rem;
 }
+
+
+.container {
+ width: 38.4rem;
+}
+
 /* Título dos artigos */
 sidebar h2 {
   color: var(--color-base-grey-800);
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
   line-height: 160%; 
   gap: 3.2rem;
+  margin-bottom: 3.2rem;
+  margin-left: 2.6rem;
 }
+
 /* Configuração dos subtítulos */
-sidebar h3 {
+.details {
   color: var(--color-base-grey-800);
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: 700;
   line-height: 160%;
 }
@@ -174,11 +181,12 @@ sidebar h3 {
 /* Configuração do parágrafo */
 sidebar p {
   color: var(--color-base-grey-900);
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 400;
   line-height: 160%; 
-  width: 215px;
+  width: 21.5rem;
 }
+
 
 
 /*Configuração do conteúdo 
