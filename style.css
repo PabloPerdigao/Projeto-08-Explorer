@@ -27,6 +27,7 @@ html,body,input {
   font-family: 'Mulish', sans-serif;
 }
 
+/* Configuração da página */
 body {
   /* Ajuste de unidade pra acessibilidade */
   font-size: 1.6rem;
@@ -37,6 +38,7 @@ body {
   height: 194.5rem;
 }
 
+/* Configuração do cabeçalho */
 header {
   
   display: flex;
@@ -60,7 +62,7 @@ nav {
   padding: .8rem;
 }
 
-/* Configuração de pesquisa */
+/* Configuração do conteúdo do campo de pesquisa */
 .input-wrapper label {
   width: 1px;
   height: 1px;
@@ -68,7 +70,7 @@ nav {
   position: absolute;
   display: flex;
 }
-
+/* Configuração do campo de pesquisa */
 .input-wrapper input {
   display: flex;
   flex: 1 0 0;
@@ -93,12 +95,14 @@ nav {
   border-radius: 50%; 
 }
 
+/* Configuração da question box */
 .container {
   margin-top: 3.1rem;
   width: 49.9rem;
   overflow-y:scroll;
 }
 
+/* Question Config */
 h1 {
   color: var(--color-base-grey-800);
   font-weight: 700;
@@ -109,6 +113,7 @@ h1 {
   margin-bottom: .8rem;
 }
 
+/* Button like config */
 .like-button {
   border: none;
   object-fit: cover;
@@ -116,7 +121,7 @@ h1 {
   margin-left: 2.6rem;
  
 }
-
+/* Button dislike config */
 .dislike-button {
   margin-left: 1.2rem; 
   border-radius: 50%;
@@ -125,6 +130,7 @@ h1 {
   margin-bottom: 3.1rem;
 }
 
+/* Configuração do parágrafo principal */
 main p {
  font-size: 16px;
  font-weight: 400;
@@ -132,21 +138,24 @@ main p {
  margin-left: 2.6rem;
 }
 
+/* Configuração dos "artigos relacionados" */
 sidebar {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+
   flex-direction: column;
   align-items: flex-start;
   gap: 32px;
+  height: 100vh;
   
 }
 
+/* imagem */
 figure {
   width: 151px;
   height: 84px;
   border-radius: 5px;
 }
-
+/* Título dos artigos */
 sidebar h2 {
   color: var(--color-base-grey-800);
   font-size: 24px;
@@ -154,13 +163,15 @@ sidebar h2 {
   line-height: 160%; 
   gap: 3.2rem;
 }
-
+/* Configuração dos subtítulos */
 sidebar h3 {
   color: var(--color-base-grey-800);
   font-size: 18px;
   font-weight: 700;
   line-height: 160%;
 }
+
+/* Configuração do parágrafo */
 sidebar p {
   color: var(--color-base-grey-900);
   font-size: 14px;
@@ -170,17 +181,15 @@ sidebar p {
 }
 
 
-
-
 /*Configuração do conteúdo 
 #app {
   display: grid;
   grid-template-rows: max-content 1fr max-content;
   height: 100vh; 
 }
-*/
 
-/*.container {
+
+.container {
   padding: 2.2rem 2.4rem;
 }
 
