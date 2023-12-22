@@ -143,6 +143,9 @@ main p {
 
 .container-2 {
   width: 38.4rem;
+  display:flex;
+  flex-direction: column;
+  
 }
 
 /* Título dos artigos */
@@ -210,6 +213,12 @@ footer p {
   font-size: 1.6rem;
   font-weight: 600;
   line-height: normal;
+}
+
+@media (min-width: 770px) {
+  .container-2 {
+    flex-direction: row;
+  }
 }
 
 /*Configuração do conteúdo 
