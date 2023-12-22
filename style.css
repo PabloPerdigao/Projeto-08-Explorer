@@ -55,6 +55,8 @@ header {
 
 /* Configuração da logomarca */
 nav {
+  display: flex;
+  flex-direction: column;
   height: 4.0rem;
   width: 4.0rem;
   background-color: #F4FCFF;
@@ -95,14 +97,17 @@ nav {
   border-radius: 50%; 
 }
 
+
 /* Configuração da question box */
 .container {
   margin-top: 3.1rem;
   width: 49.9rem;
+  display: flex;
+  
   
 }
 
-/* Question Config */
+/* Configuração da question */
 h1 {
   color: var(--color-base-grey-800);
   font-weight: 700;
@@ -113,21 +118,28 @@ h1 {
   margin-bottom: .8rem;
 }
 
+/* Configuração da image do gato */
+.cat {
+  width: 43.4rem;
+  height: 21.9rem;
+  flex-shrink: 0;
+}
+
 /* Button like config */
 .like-button {
   border: none;
   object-fit: cover;
-  border-radius: 50%; 
+  background: none;
   margin-left: 2.6rem;
- 
+  
 }
 /* Button dislike config */
 .dislike-button {
   margin-left: 1.2rem; 
-  border-radius: 50%;
   object-fit: cover;
   border: none;
   margin-bottom: 3.1rem;
+  background: none;
 }
 
 /* Configuração do parágrafo principal */
@@ -143,8 +155,6 @@ main p {
 
 .container-2 {
   width: 38.4rem;
-  display:flex;
-  flex-direction: column;
   
 }
 
@@ -215,10 +225,42 @@ footer p {
   line-height: normal;
 }
 
-@media (min-width: 770px) {
-  .container-2 {
+/* Configuração do media queries */
+@media (min-width: 768px) {
+ 
+  header {
+    width: 1440px;
+    justify-content: space-between;
+    
+  }
+
+  .input-wrapper input {
+    width: 1083px;
+  }
+
+  .cat {
+    
+    width: 803px;
+    height: 405px;
+    
+    padding:  4.4rem 10.9rem;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    margin-left: 90px;
+  }
+
+  button {
+    display: flex;
     flex-direction: row;
   }
+
+  /*button {
+    display: flex;
+    
+   }*/
 }
 
 /*Configuração do conteúdo 
