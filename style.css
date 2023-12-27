@@ -99,11 +99,11 @@ nav {
 
 
 /* Configuração da question box */
-.container {
+.container  h1 {
   margin-top: 3.1rem;
   width: 49.9rem;
-  display: flex;
-  
+ display: flex;
+ flex-direction: column;
   
 }
 
@@ -125,13 +125,15 @@ h1 {
   flex-shrink: 0;
 }
 
+
 /* Button like config */
 .like-button {
   border: none;
   object-fit: cover;
   background: none;
   margin-left: 2.6rem;
-  
+  display: inline-flex;
+  flex-direction: column;
 }
 /* Button dislike config */
 .dislike-button {
@@ -140,6 +142,8 @@ h1 {
   border: none;
   margin-bottom: 3.1rem;
   background: none;
+  display: inline-flex;
+  flex-direction: column;
 }
 
 /* Configuração do parágrafo principal */
@@ -152,10 +156,17 @@ main p {
 }
 
 
-
 .container-2 {
   width: 38.4rem;
-  
+  display: inline-flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 32px;
+
+
+
+
+
 }
 
 /* Título dos artigos */
@@ -225,6 +236,10 @@ footer p {
   line-height: normal;
 }
 
+
+/* -- Configuração do Layout para Desktop -- */
+
+
 /* Configuração do media queries */
 @media (min-width: 768px) {
  
@@ -248,14 +263,18 @@ footer p {
 
   .main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-left: 90px;
   }
 
-  button {
+  .sidebar {
     display: flex;
-    flex-direction: row;
+   flex-direction: column;
+   align-items: flex-start;
+   gap: 32px;
   }
+
+ 
 
   /*button {
     display: flex;
