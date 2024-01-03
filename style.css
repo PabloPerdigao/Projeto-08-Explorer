@@ -43,6 +43,7 @@ body {
 header {
   
   display: flex;
+  align-items: center;
   width: 43rem;
   height: 7.2rem;
   padding: 1.2rem 4.8rem;
@@ -73,8 +74,10 @@ nav {
   position: absolute;
   display: flex;
 }
+
 /* Configuração do campo de pesquisa */
 .input-wrapper input {
+  width: 100%;
   display: flex;
   flex: 1 0 0;
   padding: 1.2rem 1.6rem 1.2rem 1.4rem;
@@ -241,11 +244,10 @@ footer p {
 
 /* Configuração do media queries */
 @media (min-width: 768px) {
- 
+
   header {
     width: 1440px;
     justify-content: space-between;
-    
   }
 
   .input-wrapper input {
@@ -260,20 +262,63 @@ footer p {
     padding:  4.4rem 10.9rem;
   }
 
+  
   .main {
     display: flex;
     flex-direction: row;
     margin-left: 90px;
   }
 
-  .container-2 {
-    width: 200px;
-}
-
+  .aside {
+    width: 384px;
+    display: flex;
+    flex-direction: row;
+  }
+ 
 
  footer {
-  width: 1440px;
+   width: 1440px;
  }
+ 
+
+
+  #app {
+    display: grid;
+    grid-template-areas: 
+    "A A A"
+    "B B C"
+    "D D D";
+ 
+    
+  }
+ 
+ #app > * {
+   border: 1px solid orangered;
+ }
+ 
+ #app header {
+   grid-area: A ;
+    height: 72px;
+ }
+ 
+ #app main {
+    grid-area: B;
+     
+ }
+ 
+ #app aside {
+    grid-area: C;
+    height: 566px;
+     
+ }
+ 
+ #app footer {
+    grid-area: D;
+    height: 64px;
+ }
+ 
+
+ 
 
   /*button {
     display: flex;
