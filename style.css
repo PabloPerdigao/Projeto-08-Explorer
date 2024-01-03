@@ -66,15 +66,6 @@ nav {
   padding: .8rem;
 }
 
-/* Configuração do conteúdo do campo de pesquisa */
-.input-wrapper label {
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  display: flex;
-}
-
 /* Configuração do campo de pesquisa */
 .input-wrapper input {
   width: 100%;
@@ -87,6 +78,16 @@ nav {
   background-color: var(--color-base-green-500);
   border: none;  
 }
+
+/* Configuração do conteúdo do campo de pesquisa */
+.input-wrapper label {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+}
+
 
 .input-wrapper input::placeholder {
   color: var(--color-base-white);
@@ -139,6 +140,7 @@ h1 {
   display: inline-flex;
   flex-direction: column;
 }
+
 /* Button dislike config */
 .dislike-button {
   margin-left: 1.2rem; 
@@ -281,7 +283,6 @@ footer p {
  }
  
 
-
   #app {
     display: grid;
     grid-template-areas: 
@@ -289,7 +290,6 @@ footer p {
     "B B C"
     "D D D";
  
-    
   }
  
  #app > * {
@@ -317,13 +317,6 @@ footer p {
     height: 64px;
  }
  
-
- 
-
-  /*button {
-    display: flex;
-    
-   }*/
 }
 
 /*Configuração do conteúdo 
