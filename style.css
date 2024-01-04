@@ -7,7 +7,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-
 /* Configuração das cores-base do layout */
 :root {
   /* Ajuste de unidade pra acessibilidade */
@@ -123,11 +122,12 @@ h1 {
   margin-bottom: .8rem;
 }
 
-/* Configuração da image do gato */
+/* Configuração da imagem do gato */
 .cat {
   width: 43.4rem;
   height: 21.9rem;
   flex-shrink: 0;
+  border-radius: .5rem ;
 }
 
 
@@ -240,48 +240,56 @@ footer p {
   line-height: normal;
 }
 
-
 /* -- Configuração do Layout para Desktop -- */
 
 
 /* Configuração do media queries */
 @media (min-width: 768px) {
 
-  header {
-    width: 1440px;
-    justify-content: space-between;
+  body  {
+    height: auto;
+    width: auto;
   }
 
+  header {
+    width: 100vw;
+  }
+  
   .input-wrapper input {
-    width: 1083px;
+    width: 108.3rem;
   }
 
   .cat {
-    
-    width: 803px;
-    height: 405px;
-    
-    padding:  4.4rem 10.9rem;
+    width: 80.3rem;
+    height: 40.5rem;
+   flex-shrink: 0;
+   border-radius: 5px;
+   margin-left: 10.9rem;
+   margin-top: 4.4rem;
   }
-
   
-  .main {
-    display: flex;
-    flex-direction: row;
-    margin-left: 90px;
+  .container h1 {
+    display: inline-flex;
+    align-items: center;
+    gap: 36.6rem;
   }
 
-  .aside {
-    width: 384px;
-    display: flex;
-    flex-direction: row;
-  }
- 
-
- footer {
-   width: 1440px;
+ main {
+  margin-right: 3.4rem;
  }
  
+ 
+  /* Título dos artigos */
+  .container-2 h2 {
+   margin-top: 4.4rem;
+  }
+
+ footer {
+   width: 100%;
+   height: 6.4rem;
+   bottom: 0;
+  position: absolute;
+  }
 
   #app {
     display: grid;
@@ -289,76 +297,26 @@ footer p {
     "A A A"
     "B B C"
     "D D D";
- 
   }
  
- #app > * {
-   border: 1px solid orangered;
- }
+  #app > * {
+    border: 1px solid orangered;
+  }
  
- #app header {
-   grid-area: A ;
-    height: 72px;
- }
+  #app header {
+    grid-area: A ;
+    
+  }
  
- #app main {
-    grid-area: B;
-     
- }
+  #app main {
+     grid-area: B;
+  }
  
- #app aside {
+  #app aside {
     grid-area: C;
-    height: 566px;
-     
- }
+  }
  
- #app footer {
+  #app footer {
     grid-area: D;
-    height: 64px;
- }
- 
-}
-
-/*Configuração do conteúdo 
-#app {
-  display: grid;
-  grid-template-rows: max-content 1fr max-content;
-  height: 100vh; 
-}
-
-
-.container {
-  padding: 2.2rem 2.4rem;
-}
-
-#app{
-  grid-template-areas: 
-   "A A A"
-   "B B C"
-   "D D D";
- 
-  border: 2px  solid tomato;
-}
-
-#app > * {
-  border: 1px solid green;
-}
-
-
-#app header {
-  grid-area: A ;
-}
-
-#app main {
-  grid-area: B ;
-}
-
-#app sidebar {
-  grid-area: C ;
-}
-
-#app footer {
-  grid-area: D ;
-}
-
-
+  }
+}  
