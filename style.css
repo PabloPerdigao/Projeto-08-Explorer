@@ -42,8 +42,10 @@ body {
 header {
   
   display: flex;
+  flex-direction: row;
   align-items: center;
-  width: 43rem;
+
+  width: 83.5rem;
   height: 7.2rem;
   padding: 1.2rem 4.8rem;
   
@@ -67,7 +69,7 @@ nav {
 
 /* Configuração do campo de pesquisa */
 .input-wrapper input {
-  width: 100%;
+  width: 100% 214px;
   display: flex;
   flex: 1 0 0;
   padding: 1.2rem 1.6rem 1.2rem 1.4rem;
@@ -99,6 +101,7 @@ nav {
   width: 4.2rem;
   object-fit: cover;
   border-radius: 50%; 
+  
 }
 
 
@@ -246,51 +249,85 @@ footer p {
 /* Configuração do media queries */
 @media (min-width: 768px) {
 
+  /* Configuração da página */
   body  {
     height: auto;
     width: auto;
   }
 
+  /* Configuração do cabeçalho */
   header {
-    width: 100vw;
-  }
-  
-  .input-wrapper input {
-    width: 108.3rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1.2rem 4.8rem;
+    gap: 2.55rem;
   }
 
-  .cat {
-    width: 80.3rem;
-    height: 40.5rem;
-   flex-shrink: 0;
-   border-radius: 5px;
-   margin-left: 10.9rem;
-   margin-top: 4.4rem;
+ /* Configuração da logomarca */
+  nav {
+    width: 4.0rem;
+    height: 4.0rem;
+    border-radius: 50%;
+    padding: .8rem;
+  }
+
+ /* Configuração do campo de pesquisa */
+  .input-wrapper {
+    flex: 1;
+  }
+
+  .input-wrapper input {
+    width: 100%;
+    min-width: 1083px; /* Largura mínima desejada para desktop */
   }
   
+ /* Configuração da foto de perfil do usuário */
+  .avatar {
+    height: 4.2rem;
+    width: 4.2rem;
+    object-fit: cover;
+    border-radius: 50%;
+ }
+
+ /* Configuração da imagem do gato dentro da media query */
+ .cat {
+  width: 80.3rem;
+  height: 40.5rem;
+ flex-shrink: 0;
+ border-radius: 5px;
+ margin-left: 10.9rem;
+ margin-top: 4.4rem;
+}
+  
+  /* Configuração da question box */
   .container h1 {
     display: inline-flex;
     align-items: center;
     gap: 36.6rem;
   }
 
- main {
-  margin-right: 3.4rem;
- }
+  /* Configuração do conteúdo principal */
+  main {
+   margin-right: 3.4rem;
+  }
  
  
-  /* Título dos artigos */
+  /* Título dos artigos relacionados */
   .container-2 h2 {
    margin-top: 4.4rem;
   }
 
+  /** Configuração do rodapé do blog*/
  footer {
    width: 100%;
    height: 6.4rem;
    bottom: 0;
-  position: absolute;
+   position: fixed;
   }
 
+  /* Configuração do grid na página*/
   #app {
     display: grid;
     grid-template-areas: 
